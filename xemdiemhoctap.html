@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="layout.css">
+    <script src="layout1.js"></script>
+  </head>
+  <body>
+    <ul class="navigation" style="padding:0px;">
+        <li class="nav-item"><a href="soyeulilich.html">SƠ YẾU LÝ LỊCH</a></li>
+        <li class="nav-item has-child1"><a href="tinchi.html">ĐĂNG KÝ HỌC</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="tinchi.html">ĐĂNG KÝ HỌC TÍN CHỈ</a>
+                <a href="dknganh2.html">ĐĂNG KÝ HỌC NGÀNH 2</a>
+                <a href="xemhocphan.html">LỚP HỌC PHẦN ĐÃ ĐĂNG <br>KÍ</a>
+              </li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="xemhocphi.html">XEM HỌC PHÍ</a></li>
+        <li class="nav-item"><a href="xemlichhoc.html">XEM LỊCH HỌC</a></li>
+        <li class="nav-item"><a href="lichthi.html">XEM LỊCH THI</a></li>
+        <li class="nav-item"><a href="xemdiemhoctap.html">XEM ĐIỂM HỌC TẬP</a></li>
+        <li class="nav-item"><a href="diemrenluyen.html">XEM ĐIỂM RÈN LUYỆN</a></li>
+        <li class="nav-item has-child2"><a href="dv2.html">DỊCH VỤ MỘT CỬA</a>
+          <ul class="sub-menu">
+            <li><a href="dv2.html">ĐƠN XIN CẤP THẺ<br>SINH VIÊN(tạm thời)</a></li>
+            <li><a href="">ĐƠN XIN TRỞ LẠI<br>HỌC TẬP</a></li>
+            <li><a href="">ĐƠN XIN DỰ THI</a></li>
+            <li><a href="">ĐƠN XIN HỌC NGHÀNH 2</a></li>
+          </ul></li>
+        <li class="nav-item"><a href="guiykien.html">GỬI Ý KIẾN</a></li>
+      </ul>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
+
+  <div class="site-wrap">
+    <div class="brand">
+      <a href="C:\Users\Acer\Desktop\web\Bai_thi">
+        <img style="height: 64px; margin-left: 10px;" src="	https://dainam.edu.vn/admin/upload/logo/8tedlgbzwga59lkxpcq120200504091307_thump.png" alt="logo">
+      </a>
+    </div>
+    <header></header>
+    <div class="rowa" style="margin-top: 70px;">
+      <div class="col-md-10" style="background-color:white">
+          <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+      
+      <tbody><tr>
+          <td style="width: 100%">
+              <table style="width: 100%" border="0" height="100%" cellpadding="1" cellspacing="1">
+                  <tbody><tr>
+                      <td style="width: 100%; text-align: center ;">
+                          <span id="Label2" style="display:inline-block;color:#05233B;font-family:Arial;font-size:Medium;font-weight:bold;width:100%;">BẢNG ĐIỂM CÁ NHÂN TOÀN KHÓA</span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td align="center" style="font-weight: bold; font-size: medium; font-family: arial; text-align: right;">
+                          
+                          <span id="Label1" style="display:inline-block;font-family:Arial;font-size:10pt;font-weight:bold;width:128px;">Xem bảng điểm:</span>
+                          <select name="cmbID_bang_dien" onchange="javascript:setTimeout('__doPostBack(\'cmbID_bang_dien\',\'\')', 0)" id="cmbID_bang_dien" style="font-family:Arial;font-size:10pt;width:240px;">
+      <option selected="selected" value="0">Bảng điểm chuyên ngành chính</option>
+      <option value="1">Bảng điểm chuyên ngành 2</option>
+
+      </select>
+                          <input type="submit" name="cmdPrint" value="In bảng điểm" onclick="javascript:window.open('KetQuaHocTapPrint.aspx?ID_bang_diem=0','KetQuaHocTapPrint','location=1, left=100,top=10,width=900,height=700,toolbar=1,resizable=0'); return false;" id="cmdPrint" class="btn btn-success">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="FONT-SIZE: 12pt;  width: 100%;  vertical-align: top;" colspan="" height="100%">
+                          <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="white">
+                              <tbody><tr>
+                                  <td align="right" style="width: 25%">
+                                      <span id="labTBC_tich_luy">TBC tích luỹ thang điểm 4:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%;">
+                                      <span id="lblTBC_tich_luy4" style="font-family:Arial;font-size:11pt;font-weight:bold;">3.31</span></td>
+                                  <td align="right" style="width: 25%">
+                                      <span id="labXep_loai_hoc_luc">Xếp hạng học lực:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%;">
+                                      <span id="lblXep_loai_hoc_luc" style="font-family:Arial;font-size:11pt;font-weight:bold;">.</span></td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="width: 25%; height: 20px;">
+                                      <span id="labTBCHT4">TBC học tập thang điểm 4:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%; height: 20px;">
+                                      <span id="lblTBCHT4" style="font-family:Arial;font-size:11pt;font-weight:bold;">3.31</span></td>
+                                  <td align="right" style="width: 25%; height: 20px;">
+                                      <span id="labXep_loai_hoc_tap4">Xếp loại học tập thang 4:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%; height: 20px;">
+                                      <span id="lblXep_loai_hoc_tap4" style="font-family:Arial;font-size:11pt;font-weight:bold;">Giỏi</span></td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="width: 25%; height: 20px;">
+                                      <span id="labTBCHT10">TBC học tập thang điểm 10:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%; height: 20px;">
+                                      <span id="lblTBCHT10" style="font-family:Arial;font-size:11pt;font-weight:bold;">8.62</span></td>
+                                  <td align="right" style="width: 25%; height: 20px;">
+                                      <span id="labXep_loai_hoc_tap">Xếp loại học tập thang 10:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%; height: 20px;">
+                                      <span id="lblXep_loai_hoc_tap10" style="font-family:Arial;font-size:11pt;font-weight:bold;">Giỏi</span></td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="width: 25%; height: 20px;">
+                                      <span id="Label5">Số môn thi lại:</span>
+      &nbsp;</td>
+                                  <td align="left" style="width: 25%; height: 20px;">
+                                      <span id="lblSo_mon_thi_lai" style="font-family:Arial;font-size:11pt;font-weight:bold;">0</span></td>
+                                  <td align="right" style="width: 25%; height: 20px;">
+                                      <span id="labSo_tin_chi_tich_luy">Số tín chỉ đã tích luỹ:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%; height: 20px;">
+                                      <span id="lblSo_tin_chi_tich_luy" style="font-family:Arial;font-size:11pt;font-weight:bold;">34</span></td>
+                              </tr>
+                              <tr>
+                                  <td align="right" style="width: 25%">
+                                      <span id="Label6">Số môn học lại:</span>
+                                  </td>
+                                  <td align="left" style="width: 25%">
+                                      <span id="lblSo_mon_hoc_lai" style="font-family:Arial;font-size:11pt;font-weight:bold;">0</span></td>
+                                  <td align="right" style="width: 25%">
+                                      <span id="Label10">Số môn chờ điểm: </span>
+                                  </td>
+                                  <td align="left" style="width: 25%">
+                                      &nbsp;<span id="lblSo_mon_cho_diem" style="font-family:Arial;font-size:11pt;font-weight:bold;">5</span></td>
+                              </tr>
+                                  <tr>
+                                  <td align="right" style="width: 25%">
+                                      
+                                  </td>
+                                  <td align="left" style="width: 25%">
+                                      </td>
+                                  <td align="right" style="width: 25%">
+                                      
+                                  </td>
+                                  <td align="left" style="width: 25%">
+                                      &nbsp;</td>
+                              </tr>
+                          </tbody></table>
+                          </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 100%; vertical-align: top;">
+                          <div>
+      <table class="GridViewStyle" cellspacing="0" cellpadding="4" rules="all" border="1" id="grdDiemDaTichLuy" style="width:100%;border-collapse:collapse;">
+      <tbody><tr class="HeaderStyle">
+      <th scope="col">Học kỳ</th><th scope="col">Năm học</th><th scope="col">Mã học phần</th><th scope="col">Tên học phần</th><th scope="col">Số tín chỉ</th><th scope="col">Thang điểm 10</th><th scope="col">Thang điểm 4</th><th scope="col">Thang điểm chữ</th><th scope="col">Không tính TBC</th><th scope="col">Ghi chú</th><th scope="col">#</th>
+      </tr><tr class="RowStyle">
+      <td align="center" valign="middle" rowspan="5" style="width:4%;">1</td><td align="center" valign="middle" rowspan="5" style="width:6%;">2022-2023</td><td align="center" style="width:8%;">047CQTA2</td><td style="width:32%;">Tiếng Anh P2</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl02_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl02$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2883">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">077CQ1bCTDL</td><td style="width:32%;">Cấu trúc dữ liệu và giải thuật</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl03_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl03$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2922">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:8%;">247CQ2cTC1</td><td style="width:32%;">Lý luận và phương pháp Giáo dục thể chất 1</td><td align="center" style="width:5%;">0</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl04_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl04$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2947">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">247CQ2cVO1</td><td style="width:32%;">Võ (Cơ bản)</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl05_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl05$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2965">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:8%;">247CQ2cVO2</td><td style="width:32%;">Võ (Ứng dụng)</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl06_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl06$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2966">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" valign="middle" rowspan="5" style="width:4%;">2</td><td align="center" valign="middle" rowspan="11" style="width:6%;">2021-2022</td><td align="center" style="width:8%;">HTMT</td><td style="width:32%;">Hệ thống máy tính</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">10</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl07_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl07$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2786">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:8%;">PTDLTKP</td><td style="width:32%;">Phân tích dữ liệu, thống kê và Python</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">8.5</td><td align="center" style="width:5%;">3.25</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl08_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl08$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2785">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">QTDNUDC</td><td style="width:32%;">Quản trị doanh nghiệp và ứng dụng CNTT</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">7.5</td><td align="center" style="width:5%;">2.75</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl09_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl09$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2787">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:8%;">TTCNTT2</td><td style="width:32%;">Thực tập Công nghệ thông tin 2</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">10</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl10_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl10$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2784">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">047CQTAKP1</td><td style="width:32%;">Tiếng Anh P1</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">7</td><td align="center" style="width:5%;">2.5</td><td align="center" style="width:5%;">B</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl11_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl11$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=5">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" valign="middle" rowspan="6" style="width:4%;">1</td><td align="center" style="width:8%;">HTTTDL</td><td style="width:32%;">Hệ thống thông tin địa lý</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">9.5</td><td align="center" style="width:5%;">3.75</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl12_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl12$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2743">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">KNM</td><td style="width:32%;">Kỹ năng mềm cơ bản</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">8.5</td><td align="center" style="width:5%;">3.25</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl13_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl13$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=1367">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:8%;">LTCB&amp;C</td><td style="width:32%;">Lập trình cơ bản và C</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">8</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">A</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl14_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl14$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2701">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">147CQcVMTG</td><td style="width:32%;">Lịch sử văn minh thế giới</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">6.5</td><td align="center" style="width:5%;">2.25</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl15_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl15$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=109">Xem chi tiết</a></td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:8%;">NMCNTT</td><td style="width:32%;">Nhập môn Công nghệ thông tin</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">8.5</td><td align="center" style="width:5%;">3.25</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl16_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl16$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2702">Xem chi tiết</a></td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:8%;">TTCNTT</td><td style="width:32%;">Thực tập</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">10</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">&nbsp;</td><td align="center" style="width:5%;"><span disabled="disabled"><input id="grdDiemDaTichLuy_ctl17_ctl00" type="checkbox" name="grdDiemDaTichLuy$ctl17$ctl00" disabled="disabled"></span></td><td align="center" style="width:5%;">&nbsp;</td><td align="center" valign="middle" style="width:10%;"><a href="KetQuaHocTapChiTiet.aspx?&amp;ID_mon=2700">Xem chi tiết</a></td>
+      </tr>
+      </tbody></table>
+      </div>
+                  </td>
+                  </tr>
+              </tbody></table>
+          </td>
+      </tr>
+      <tr><td style="FONT-SIZE: 14pt; COLOR: green; height: 10px; vertical-align: top; text-align: center;" colspan="2">
+              <span id="lblTenCTDT" style="display:inline-block;font-family:Arial;font-size:12pt;font-weight:bold;width:100%;">DANH SÁCH HỌC PHẦN CHƯA TÍCH LŨY</span></td></tr>
+      <tr>
+              <td style="width: 100%; height:500px; vertical-align: top; text-align: center;">
+              <div>
+      <table class="GridViewStyle" cellspacing="0" rules="all" border="1" id="grdDiemChuaTichLuy" style="width:100%;border-collapse:collapse;">
+      <tbody><tr class="HeaderStyle">
+      <th scope="col">Khối kiến thức</th><th scope="col">Mã học phần</th><th scope="col">Tên học phần</th><th scope="col">Kỳ thứ</th><th scope="col">Số tín chỉ</th><th scope="col">Tổng số tiết</th><th scope="col">Điều kiện tiên quyết</th><th scope="col">Bắt buộc</th><th scope="col">Tự chọn</th>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành</td><td align="center" style="width:10%;">077CQĐSTU</td><td align="left" style="width:25%;">Đại số tuyến tính và tối ưu </td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành</td><td align="center" style="width:10%;">077CQ3bTTCN3</td><td align="left" style="width:25%;">Thực tập CNTT3: Thiết kế, lập trình front-end</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành</td><td align="center" style="width:10%;">077CQGT</td><td align="left" style="width:25%;">Toán Giải tích</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành.</td><td align="center" style="width:10%;">077CQGT01</td><td align="left" style="width:25%;">Giải tích P1</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">45</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành.</td><td align="center" style="width:10%;">077CQ1bCTDL</td><td align="left" style="width:25%;">Cấu trúc dữ liệu và giải thuật</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành.</td><td align="center" style="width:10%;">077CQ3bLTĐT</td><td align="left" style="width:25%;">Lập trình hướng đối tượng</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành.</td><td align="center" style="width:10%;">077CQĐASO</td><td align="left" style="width:25%;">Đại số</td><td align="center" style="width:5%;">9</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">45</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành.</td><td align="center" style="width:10%;">077CQ3bXTKW1</td><td align="left" style="width:25%;">Thiết kế Web 1</td><td align="center" style="width:5%;">9</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">45</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Cơ sở ngành.</td><td align="center" style="width:10%;">077CQ1bCSLT</td><td align="left" style="width:25%;">Cơ sở lập trình</td><td align="center" style="width:5%;">9</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">60</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">247CQ2cTC1</td><td align="left" style="width:25%;">Lý luận và phương pháp Giáo dục thể chất 1</td><td align="center" style="width:5%;">0</td><td align="center" style="width:5%;">0</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">TOEIC đầu vào</td><td align="left" style="width:25%;">Thi Tiếng Anh phân loại lớp</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">007CQLLCT1</td><td align="left" style="width:25%;">Triết học Mac – Lênin</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">30</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">007CQLLCT2</td><td align="left" style="width:25%;">Kinh tế chính trị Mác - Lênin</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">30</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">007CQLLCT4</td><td align="left" style="width:25%;">Lịch sử Đảng Cộng sản Việt Nam</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">30</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">007CQLLCT3</td><td align="left" style="width:25%;">Chủ nghĩa Xã hội khoa học</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">30</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">007CQLLCT5</td><td align="left" style="width:25%;">Tư tưởng Hồ Chí Minh</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">2</td><td align="center" style="width:5%;">30</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">GDT02.1</td><td align="left" style="width:25%;">Yoga 1</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">&nbsp;</td><td align="center" style="width:3%;">X</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">GDT02.2</td><td align="left" style="width:25%;">Dance 1</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">&nbsp;</td><td align="center" style="width:3%;">X</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">GDT02.3</td><td align="left" style="width:25%;">Võ 1</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">&nbsp;</td><td align="center" style="width:3%;">X</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">GDT03.1</td><td align="left" style="width:25%;">Yoga 2</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">&nbsp;</td><td align="center" style="width:3%;">X</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">GDT03.2</td><td align="left" style="width:25%;">Dance 2</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">&nbsp;</td><td align="center" style="width:3%;">X</td>
+      </tr><tr class="AltRowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">GDT03.3</td><td align="left" style="width:25%;">Võ 2</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">1</td><td align="center" style="width:5%;">0</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">&nbsp;</td><td align="center" style="width:3%;">X</td>
+      </tr><tr class="RowStyle">
+      <td align="center" style="width:15%;">Giáo dục đại cương</td><td align="center" style="width:10%;">047CQTA2</td><td align="left" style="width:25%;">Tiếng Anh P2</td><td align="center" style="width:5%;">3</td><td align="center" style="width:5%;">4</td><td align="center" style="width:5%;">60</td><td align="left" style="width:20%;">&nbsp;</td><td align="center" style="width:3%;">X</td><td align="center" style="width:3%;">&nbsp;</td>
+      </tr>
+      </tbody></table>
+      </div>
+          </td>
+          </tr>
+      
+      </tbody></table>
+          </div>    
+</div>
+
+
+    
+    
+
+    <footer class="row">
+    <a href="TTNHOM.html" style="position: absolute; margin-top: 15px; right: 10px;">Bản quyền</a>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="layout1.js"></script>
+  </body>
+</html>

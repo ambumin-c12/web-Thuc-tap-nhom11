@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400");
+/* Navigation Menu - Background */
+.navigation {
+    /* critical sizing and position styles */
+    width: 100%;
+    height: 100%;
+    /*  */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    
+    /* non-critical appearance styles */
+    list-style: none;
+    background-color: #FFF7E9;
+
+  }
+  .navigation li a{
+    border-bottom:2px solid #5F9DF7 ;
+  }
+  .navigation li:last-child a{
+    border: none;
+  }
+  /* sub-menu */
+  
+  /* Navigation Menu - List items */
+  .nav-item {
+    /* non-critical appearance styles */
+    width: 200px;
+    border-top: 1px solid #FFF7E9;
+    border-bottom: 1px solid #FFF7E9;
+    display: contents;
+  }
+  
+  .nav-item a {
+    /* non-critical appearance styles */
+    display: block;
+    padding: 1em;
+    background: linear-gradient(135deg, #FFF7E9 0%,#FFF7E9 100%);
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s;
+  }
+  
+  .nav-item a:hover {
+    color: #5F9DF7;
+    background: linear-gradient(135deg, rgba(3, 3, 3, 0) 0%,rgba(0, 0, 0, 0.65) 100%);
+  }
+  
+  /* Site Wrapper - Everything that isn't navigation */
+  .site-wrap {
+    /* Critical position and size styles */
+    min-height: 100%;
+    min-width: 100%;
+    background-color: white; /* Needs a background or else the nav will show through */
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    
+    /* non-critical apperance styles */
+    padding: 4em;
+  }
+  
+  /* Nav Trigger */
+  .nav-trigger {
+    /* critical styles - hide the checkbox input */
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  label[for="nav-trigger"] {
+    /* critical positioning styles */
+    /*  */
+    position: fixed; 
+    left: 15px; top: 73px;
+    z-index: 2;
+
+    
+    /* non-critical apperance styles */
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+  }
+  
+  /* Make the Magic Happen */
+  .nav-trigger + label, .site-wrap {
+    transition: left 0.2s;
+  }
+  
+  .nav-trigger:checked + label {
+    left: 215px;
+  }
+  
+  .nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px #FFF7E9;
+  }
+  
+  body {
+      /* Without this, the body has excess horizontal scroll when the menu is open */
+    overflow-x: hidden;
+  }
+  
+  /* Additional non-critical styles */
+  
+  h1, h3, p {
+    max-width: 600px;
+    margin: 0 auto 1em;
+  }
+ 
+
+  code {
+      padding: 2px;
+      background: #ddd;
+  }
+  /* Micro reset */
+  *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+  html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+  .navigation ul.sub-menu{
+    position: absolute;
+    z-index: 3; 
+    /* background-color:  rgb(67, 66, 66);  */
+    /* padding: 15px 0; */
+    width: 100%;
+    left: 35px;
+    display: none;
+    list-style: none;
+
+  }
+   .navigation li:hover ul.sub-menu{
+    position: absolute;
+    z-index: 4;
+    display: block;
+  } 
+  .navigation ul.sub-menu a{
+    /* position: absolute;
+    z-index: 6; */
+    font-size: 12px;
+    padding: 6px 0px;
+    padding-left: 6px;
+    line-height: 1.5em;
+    background: #f7e7d0;
+    border-bottom:1px solid #5F9DF7 ;
+
+
+  }
+  .navigation ul.sub-menu a:hover {
+    color: #5F9DF7;
+    background: #efd9bb;
+  }
+  /* .navigation ul.sub-menu li{
+    position: static;
+    z-index: 3;
+  }  */
+  .navigation ul.sub-menu li:hover a{
+    border-bottom: 1px solid #555252 ;
+  }
+  .navigation ul.sub-menu li:last-child a{
+    border: none;
+  }
+  .navigation li.has-child1::after{
+    font: var(--fa-font-solid);
+    content: "\f105";
+    color: black;
+    position: absolute;
+    top: 61px;
+    left: 180px;
+  }
+  .navigation li:hover.has-child1::after{
+    font: var(--fa-font-solid);
+    content: "\f107";
+    color: #5F9DF7;
+    position: absolute;
+    top: 61px;
+    left: 180px;
+  }
+  .navigation li.has-child2::after{
+    font: var(--fa-font-solid);
+    content: "\f105";
+    position: absolute;
+    top: 343px;
+    left: 180px;
+  }
+  .navigation li:hover.has-child2::after{
+    font: var(--fa-font-solid);
+    content: "\f107";
+    color: #5F9DF7;
+    position: absolute;
+    top: 343px;
+    left: 180px;
+  }
+  header{
+    width: 100%;
+    height: 50px;
+    background-color: #f37423;
+    position: absolute;
+    z-index: 5;
+    top: 20;
+    left: 0;
+  }
+  .brand{
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    
+  }
+  .row{
+    position: absolute;
+    z-index: 7;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #5F9DF7;
+  }
+  #app {
+    display: flex;
+  }
+  
+  .vue-form {
+    font-size: 16px;
+    width: 500px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin: 50px auto;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+  }
+  .vue-form fieldset {
+    margin: 24px 0 0 0;
+  }
+  .vue-form legend {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  .vue-form div {
+    position: relative;
+    margin: 20px 0;
+  }
+  .vue-form .label {
+    display: block;
+  }
+  .vue-form input,
+  .vue-form textarea,
+  .vue-form select,
+  .vue-form label {
+    color: #2b3e51;
+  }
+  .vue-form input[type="text"],
+  .vue-form input[type="email"],
+  .vue-form textarea,
+  .vue-form select,
+  .vue-form legend {
+    display: block;
+    width: 100%;
+    appearance: none;
+  }
+  .vue-form input[type="text"],
+  .vue-form input[type="email"],
+  .vue-form textarea,
+  .vue-form select {
+    padding: 12px;
+    border: 1px solid #cfd9db;
+    background-color: #ffffff;
+    border-radius: 0.25em;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  }
+  .vue-form input[type="text"]:focus,
+  .vue-form input[type="email"]:focus,
+  .vue-form textarea:focus,
+  .vue-form select:focus {
+    outline: none;
+    border-color: #2c3e50;
+    box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+  }
+  .vue-form .select {
+    position: relative;
+  }
+  .vue-form .select::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+  }
+  .vue-form select {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+  .vue-form select::-ms-expand {
+    display: none;
+  }
+  .vue-form .vue-form-list {
+    margin-top: 16px;
+  }
+  .vue-form .vue-form-list::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .vue-form .vue-form-list li {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    margin: 0 26px 16px 0;
+    float: left;
+  }
+  .vue-form textarea {
+    min-height: 120px;
+    resize: vertical;
+    overflow: auto;
+  }
+  .vue-form input[type="submit"] {
+    border: none;
+    background: #2c3e50;
+    border-radius: 0.25em;
+    padding: 12px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    appearance: none;
+  }
+  .no-touch .vue-form input[type="submit"]:hover {
+    background: #42a2e1;
+  }
+  .vue-form input[type="submit"]:focus {
+    outline: none;
+    background: #2b3e51;
+  }
+  .vue-form input[type="submit"]:active {
+    transform: scale(0.9);
+  }
+  .vue-form .error-message {
+    height: 35px;
+    margin: 0px;
+  }
+  .vue-form .error-message p {
+    background: #e94b35;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 0.25em;
+    padding: 16px;
+  }
+  .vue-form .error {
+    border-color: #e94b35 !important;
+  }
+  .vue-form .counter {
+    color: #2c3e50;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 10px;
+    padding: 4px;
+  }
+  
+  .debug {
+    border-radius: 4px;
+    margin: 50px auto;
+    width: 500px;
+    background-color: #000;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .debug pre {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    white-space: pre-wrap;
+  }
+  
+  @-webkit-keyframes cd-bounce {
+    0%,
+    100% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.8);
+    }
+  }
+  @-moz-keyframes cd-bounce {
+    0%,
+    100% {
+      -moz-transform: scale(1);
+    }
+    50% {
+      -moz-transform: scale(0.8);
+    }
+  }
+  @keyframes cd-bounce {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+  }
+

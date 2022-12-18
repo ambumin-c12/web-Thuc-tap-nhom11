@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="layout.css">
+        <script src="soyeulilich.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <ul class="navigation" style="padding:0px;">
+            <li class="nav-item"><a href="soyeulilich.html">SƠ YẾU LÝ LỊCH</a></li>
+            <li class="nav-item has-child1"><a href="tinchi.html">ĐĂNG KÝ HỌC</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="tinchi.html">ĐĂNG KÝ HỌC TÍN CHỈ</a>
+                    <a href="dknganh2.html">ĐĂNG KÝ HỌC NGÀNH 2</a>
+                    <a href="xemhocphan.html">LỚP HỌC PHẦN ĐÃ ĐĂNG <br>KÍ</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="xemhocphi.html">XEM HỌC PHÍ</a></li>
+            <li class="nav-item"><a href="xemlichhoc.html">XEM LỊCH HỌC</a></li>
+            <li class="nav-item"><a href="lichthi.html">XEM LỊCH THI</a></li>
+            <li class="nav-item"><a href="xemdiemhoctap.html">XEM ĐIỂM HỌC TẬP</a></li>
+            <li class="nav-item"><a href="diemrenluyen.html">XEM ĐIỂM RÈN LUYỆN</a></li>
+            <li class="nav-item has-child2"><a href="dv2.html">DỊCH VỤ MỘT CỬA</a>
+              <ul class="sub-menu">
+                <li><a href="dv2.html">ĐƠN XIN CẤP THẺ<br>SINH VIÊN(tạm thời)</a></li>
+                <li><a href="">ĐƠN XIN TRỞ LẠI<br>HỌC TẬP</a></li>
+                <li><a href="">ĐƠN XIN DỰ THI</a></li>
+                <li><a href="">ĐƠN XIN HỌC NGHÀNH 2</a></li>
+              </ul></li>
+            <li class="nav-item"><a href="guiykien.html">GỬI Ý KIẾN</a></li>
+          </ul>
+
+        
+    
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    
+    <div class="site-wrap">
+        <div class="brand">
+            <a href="C:\Users\Acer\Desktop\web\Bai_thi">
+                <img style="height: 64px; margin-left: 10px;" src="	https://dainam.edu.vn/admin/upload/logo/8tedlgbzwga59lkxpcq120200504091307_thump.png" alt="logo">
+            </a>
+        </div>
+        <header></header>
+        
+        <article style="margin-top: 70px;height: 800px">
+            <div class="dktinchi" style="background-color:white">
+                <table class="table" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+                  <tbody>
+                    <tr>
+                        <td style="width: 100%">            
+                    
+  
+                        <table style="width: 100%" border="0" cellpadding="0" cellspacing="0">  
+                        <tbody>
+                            <tr>
+                        <td align="center" colspan="3">
+                          <span id="lblThoi_gian_dang_ky" style="color:Red;font-family:Arial;font-size:Larger;font-weight:bold;">Chưa có thông tin đăng ký, bạn quay lại đăng ký sau !</span></td>
+                            </tr>
+                <tr style="font-size: 10pt;border: none" color: #000000">
+                    <td align="left" valign="bottom" style="border: none">
+                        <button class="btn btn-success" onclick="OpenWindows()" type="button"><span id="Label2">In kết quả đã đăng ký</span></button>
+                    </td>
+                                      
+                    <td align="right" style="border: none">
+                        &nbsp;<input type="submit" name="cmdDangKyLop1" value="Đăng ký lớp tín chỉ" id="cmdDangKyLop1" disabled="disabled" class="btn btn-success">
+                    </td>
+                </tr>         
+                    <tr style="font-size: 10pt;border: none">
+                        <td style="width: 100%; height: 100%;border: none;" colspan="3">
+                            <table style="border: none" cellpadding="1" cellspacing="1" style="width: 100%" bgcolor="#336699">                     
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 35%; height: 100%;border: none" align="left">
+                                            <span id="lblSo_tin_chi_min" style="font-size:Small;font-weight:bold;">Số tín chỉ đăng ký tối thiểu</span><strong></strong></td>
+                                        <td style="width: 35%; height: 100%;border: none" align="center">
+                                            <strong>
+                                                </strong></td>
+                                        <td style="width: 30%; height: 100%;border: none" align="right">
+                                            <span id="lblSo_tin_chi_max" style="font-size:Small;font-weight:bold;">Số tín chỉ học thường đăng ký tối đa</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 35%; height: 100%;border: none" align="left">
+                                            <span id="lblSo_mon" style="font-size:Small;font-weight:bold;">Số học phần đã đăng ký:</span><strong></strong></td>
+                                        <td style="width: 35%; height: 100%;border: none" align="center">
+                                            <strong></strong></td>
+                                        <td style="width: 30%; height: 100%;border: none" align="right">
+                                            <span id="lblSo_tin_chi" style="font-size:Small;font-weight:bold;">Tổng số tín chỉ đã đăng ký</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>            
+                    <tr style="font-size: 10pt;border: none">
+                        <td style="width: 100%; height: 100%;border: none" colspan="3">
+                            <div>
+
+                            </div>
+                        </td>
+                    </tr>           
+                    <tr style="font-size: 10pt;border: none">
+                      <td align="left" style="border: none" colspan="1">
+                      <button class="btn btn-success" onclick="OpenWindows()" type="button"><span id="Label1">In kết quả đã đăng ký</span></button>
+                      </td>
+                      <td align="right" style="border: none" colspan="3">
+                    <input type="submit" name="cmdDangKyLop2" value="Đăng ký lớp tín chỉ" id="cmdDangKyLop2" disabled="disabled" class="btn btn-success">
+                
+                  </td></tr>
+              </tbody></table>
+                      </td>
+                  </tr>
+              </tbody></table>    
+          </div>
+
+        </article>
+        
+
+        <footer class="row">
+            <a href="TTNHOM.html" style="position: absolute; margin-top: 15px; right: 10px;">Bản quyền</a>
+          </footer>
+
+
+
+    </div>
+    
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script src="soyeulilich.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
